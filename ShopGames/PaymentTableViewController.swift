@@ -12,7 +12,17 @@ import Firebase
 class PaymentTableViewController: UITableViewController
 {
 
-    let  ref = Firebase(url:"https://luminous-inferno-5252.firebaseio.com")
+     let  ref = Firebase(url:"https://shopgames.firebaseio.com")
+    
+    
+    @IBOutlet weak var userNameField: UITextField!
+    @IBOutlet weak var addreesField: UITextField!
+    @IBOutlet weak var phoneField: UITextField!
+    @IBOutlet weak var brithdayField: UITextField!
+    @IBOutlet weak var BanckAccField: UITextField!
+    @IBOutlet weak var dataField: UITextField!
+    
+
     
       override func viewDidLoad()
     {
