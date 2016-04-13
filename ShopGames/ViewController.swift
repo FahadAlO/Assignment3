@@ -38,13 +38,40 @@ class ViewController: UIViewController
             }
             myAlert.addAction(okAction);
             self.presentViewController(myAlert, animated:true, completion:nil);
-            
-        }
-            
+         }
+         else
+         {
 
-       
-       
-       
+            ref.createUser(emailField.text!, password: passweordField.text!, withValueCompletionBlock: { error, result in
+                
+                if error != nil
+                {
+                    
+                    print("something went wrong!!")
+                    
+                }
+                else
+                {
+                    
+                    let uid = result["uid"] as? String
+                    
+                    print("Thank you for register with uid: \(uid)")
+                    
+                    let user = ["username" : self.usernameField.text!]
+                    self.ref.childByAppendingPath("users/\(uid)").setValue(user)
+                    
+                }
+            })
+        }
+        
+    }
+
+         
+         
+         
+         
+
+
        
        }
        
