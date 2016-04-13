@@ -36,12 +36,12 @@ class ViewController: UIViewController
             let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.Default){ action in
                 self.dismissViewControllerAnimated(true, completion:nil);
             }
+            
             myAlert.addAction(okAction);
             self.presentViewController(myAlert, animated:true, completion:nil);
          }
          else
          {
-
             ref.createUser(emailField.text!, password: passweordField.text!, withValueCompletionBlock: { error, result in
                 
                 if error != nil
@@ -69,7 +69,9 @@ class ViewController: UIViewController
          
          
          
-         
+           @IBAction func handleSigin(sender: AnyObject)
+    {
+
 
 
        
