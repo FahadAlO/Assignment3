@@ -26,6 +26,24 @@ class ViewController: UIViewController
        
       @IBAction func handleCreateaccount(sender: AnyObject)
     { 
+    
+       if usernameField.text!.isEmpty || emailField.text!.isEmpty || passweordField.text!.isEmpty
+            
+        {
+            
+           let myAlert = UIAlertController(title:"Alert", message:"You need to register", preferredStyle: UIAlertControllerStyle.Alert);
+            
+            let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.Default){ action in
+                self.dismissViewControllerAnimated(true, completion:nil);
+            }
+            myAlert.addAction(okAction);
+            self.presentViewController(myAlert, animated:true, completion:nil);
+            
+        }
+            
+
+       
+       
        
        
        }
