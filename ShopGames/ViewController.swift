@@ -23,7 +23,8 @@ class ViewController: UIViewController
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passweordField: UITextField!
     
-
+    
+   // this when you wnat to have new account in this app 
     @IBAction func handleCreateaccount(sender: AnyObject)
     {
   
@@ -85,6 +86,7 @@ class ViewController: UIViewController
             
             let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.Default){ action in
                 self.dismissViewControllerAnimated(true, completion:nil);
+                
             }
             
             myAlert.addAction(okAction);
