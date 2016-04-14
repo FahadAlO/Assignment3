@@ -113,8 +113,16 @@ class ViewController: UIViewController
   
    {
 
-}
+     let uid = authData.uid
+      print("Login successful with uid:\(uid)")
     
+           }
+
+       })
+    
+    }
+    
+}
     
     override func viewDidLoad()
     {
@@ -129,6 +137,12 @@ class ViewController: UIViewController
     }
 
 }
+
+
+  
+
+
+
 
 
   
