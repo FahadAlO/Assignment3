@@ -23,6 +23,48 @@ class PaymentTableViewController: UITableViewController
     @IBOutlet weak var dataField: UITextField!
     
 
+
+  
+    var item1     =    ["name": "CD name", "item" : "", "price": "$"]
+    var item2     =    ["name": "CD name", "item": ""  , "price": "$"]
+    var item3     =    ["name": "CD name"  , "item": "", "price": "$"]
+    var item4     =    ["name": "CD name"  , "item": "", "price": "$"]
+    
+    var item5     =    ["name": "CD name", "item" : "", "price": "$"]
+    var item6     =    ["name": "CD name", "item": ""  , "price": "$"]
+    var item7     =    ["name": "CD name"  , "item": "", "price": "$"]
+    var item8     =    ["name": "CD name"  , "item": "", "price": "$"]
+    
+    var item9     =    ["name": "CD name", "item" : "", "price": "$"]
+    var item10     =    ["name": "CD name", "item": ""  , "price": "$"]
+    var item11    =    ["name": "CD name"  , "item": "", "price": "$"]
+    var item12    =    ["name": "CD name"  , "item": "", "price": "$"]
+    
+    var item13    =    ["name": "CD name", "item" : "", "price": "$"]
+    var item14    =    ["name": "CD name", "item": ""  , "price": "$"]
+    var item15    =    ["name": "CD name"  , "item": "", "price": "$"]
+    var item16    =    ["name": "CD name"  , "item": "", "price": "$"]
+    
+ 
+    @IBAction func buttonpayment(sender: AnyObject)
+    {
+        
+            let usersRef = ref.childByAppendingPath("users")
+            
+            let users = ["item1": item1, "item2": item2, "item3" : item3 , "item4" : item4 item1, "item2": item2, "item3" : item3 , "item4" : item4 item1, "item2": item2, "item3" : item3 , "item4" : item4]
+            
+            usersRef.setValue(users)
+        
+        
+        ref.queryOrderedByChild("price").observeEventType(.ChildAdded, withBlock: { snapshot in
+            if let price = snapshot.value["price"] as? Int {
+                print("\(snapshot.key) price at \(price) Dollars ")
+                print(snapshot.key)
+            }
+        })
+        
+        
+    }
     
       override func viewDidLoad()
     {
