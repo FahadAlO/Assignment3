@@ -66,9 +66,6 @@ class ViewController: UIViewController
         
     }
 
-         
-         
-         
            @IBAction func handleSigin(sender: AnyObject)
     {
 
@@ -86,16 +83,34 @@ class ViewController: UIViewController
             myAlert.addAction(okAction);
             self.presentViewController(myAlert, animated:true, completion:nil);
             
+         }
+ 
+    else
+        
+        {
+    
+          ref.authUser(emailField.text!, password: passweordField.text!, withCompletionBlock: { error, authData in
+          if error != nil
+        {
+        
+        print("Unable to SigIn user")
+        
+         }
+    
+         else
+         
+         {
+         
+             let uid = authData.uid
+              print("Login successful with uid:\(uid)")
+    
+           }
 
-
-
-
-
-
-
-       
-       }
-       
+       })
+    
+    }
+    
+}
     override func viewDidLoad()
     {
         super.viewDidLoad()
