@@ -47,7 +47,7 @@ class ViewController: UIViewController
         else
             
         {
-            
+
             ref.createUser(emailField.text!, password: passweordField.text!, withValueCompletionBlock: { error, result in
                 
                 if error != nil
@@ -74,6 +74,7 @@ class ViewController: UIViewController
         
     }
     
+    // this when you have already had an account 
     @IBAction func handleSigin(sender: AnyObject)
     {
         
@@ -94,29 +95,7 @@ class ViewController: UIViewController
             
         }
  
-    else
-        
-        {
-    
-    ref.authUser(emailField.text!, password: passweordField.text!, withCompletionBlock: { error, authData in
-    if error != nil
-    {
-    
-    print("Unable to SigIn user")
-    
-    }
-    
-    else
-    {
-    
-    let uid = authData.uid
-    print("Login successful with uid:\(uid)")
-    
-           }
-
-       })
-    
-    }
+  
     
 }
     
