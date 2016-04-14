@@ -36,7 +36,7 @@ class PaymentTableViewController: UITableViewController
     var item8     =    ["name": "CD name"  , "item": "", "price": "$"]
     
     var item9     =    ["name": "CD name", "item" : "", "price": "$"]
-    var item10     =    ["name": "CD name", "item": ""  , "price": "$"]
+    var item10    =    ["name": "CD name", "item": ""  , "price": "$"]
     var item11    =    ["name": "CD name"  , "item": "", "price": "$"]
     var item12    =    ["name": "CD name"  , "item": "", "price": "$"]
     
@@ -65,6 +65,7 @@ class PaymentTableViewController: UITableViewController
         
     }
     
+  
       override func viewDidLoad()
     {
         super.viewDidLoad()
