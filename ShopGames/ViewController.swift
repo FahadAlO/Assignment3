@@ -103,8 +103,6 @@ class ViewController: UIViewController
     if error != nil
     {
  
-    {
-    
     print("Unable to SigIn user")
     
     }
