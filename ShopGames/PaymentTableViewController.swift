@@ -23,7 +23,6 @@ class PaymentTableViewController: UITableViewController
     @IBOutlet weak var dataField: UITextField!
     
 
-
   
     var item1     =    ["name": "CD name", "item" : "", "price": "$"]
     var item2     =    ["name": "CD name", "item": ""  , "price": "$"]
