@@ -102,8 +102,17 @@ class ViewController: UIViewController
     ref.authUser(emailField.text!, password: passweordField.text!, withCompletionBlock: { error, authData in
     if error != nil
     {
-
+ 
+    {
     
+    print("Unable to SigIn user")
+    
+    }
+    
+  else
+  
+   {
+
 }
     
     
