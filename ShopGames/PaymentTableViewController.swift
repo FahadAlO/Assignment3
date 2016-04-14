@@ -63,7 +63,6 @@ class PaymentTableViewController: UITableViewController
             }
         })
         
-        
     }
     
       override func viewDidLoad()
