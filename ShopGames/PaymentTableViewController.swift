@@ -65,6 +65,38 @@ class PaymentTableViewController: UITableViewController
         
     }
     
+    
+      ref.authWithCustomToken(userNameField.text, withCompletionBlock: { error, result in
+        
+        
+            self.ref.authWithCustomToken(self.addreesField.text, withCompletionBlock: { error, result in
+            
+                
+                self.ref.authWithCustomToken(self.phoneField.text, withCompletionBlock: { error, result in
+                
+                    
+                    self.ref.authWithCustomToken(self.brithdayField.text, withCompletionBlock: { error, result in
+                        
+                        
+                         self.ref.authWithCustomToken(self.brithdayField.text, withCompletionBlock: { error, result in
+                            
+                        })
+                    })
+                    
+                })
+            
+            })
+        
+        })
+        
+        self.ref.observeEventType(.Value, withBlock: { snapshot in
+            print(snapshot.value)
+            }, withCancelBlock: { error in
+                print(error.description)
+        })
+        
+
+    
   
       override func viewDidLoad()
     {
