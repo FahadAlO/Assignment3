@@ -10,7 +10,8 @@ import Firebase
 
 import Foundation
 
-class DataService {
+class DataService 
+{
     static let dataService = DataService()
     
 }
