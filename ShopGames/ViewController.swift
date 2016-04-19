@@ -7,6 +7,7 @@
 // 
 //
 
+
 import UIKit
 import Foundation
 import Firebase
@@ -16,49 +17,37 @@ class ViewController: UIViewController
     
    let ref = Firebase(url: "https://shopgames.firebaseio.com")
     
-    let  reef = Firebase(url:"https://shopgames.firebaseio.com/Bank_info")
+   let  reef = Firebase(url:"https://shopgames.firebaseio.com/Bank_info")
 
     
     var item1 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
  
     var item2 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
     
-    
     var item3 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
-    
-    
+
     var item4 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
     
-    
     var item5 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
-    
     
     var item6 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
     
     var item7 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
-    
     
     var item8 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
     
     var item9 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
     
     
-
-
-    
   var screen: [String] = ["Xcode.png","Xcode1.png","Xcode2.png","Xcode3.png","Xcode4.png","Xcode5.png","Xcode6.png","Xcode7.png","Xcode8.png","Xcode9.png","Xcode10.png","Xcode11.png","Xcode12.png","Xcode13.png","Xcode14.png","Xcode15.png","email.png","facebook.png","password2.png","Screen.png","Screen10.png","Screen11.png","Screen12.png","Screen13.png","Screen14.png","Screen15.png","Screen2.png"
     ,"Screen3.png","Screen4.png","Screen5.png","Screen6.png","Screen7.png","Screen8.png","Screen9.png","Screen1.png","tumblr.png","twitter.png","UserName.png"]
     
     
-
-    
-
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passweordField: UITextField!
     
 
-    
    // this when you wnat to have new account in this app 
     @IBAction func handleCreateaccount(sender: AnyObject)
     {
@@ -73,6 +62,7 @@ class ViewController: UIViewController
             
             let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.Default){ action in
                 self.dismissViewControllerAnimated(true, completion:nil);
+                
             }
             
             myAlert.addAction(okAction);
@@ -92,7 +82,9 @@ class ViewController: UIViewController
                     print("something went wrong!!")
                     
                 }
+                
                 else
+                
                 {
                     
                     let uid = result["uid"] as? String
@@ -122,6 +114,7 @@ class ViewController: UIViewController
             
             let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.Default){ action in
                 self.dismissViewControllerAnimated(true, completion:nil);
+                
             }
             
             myAlert.addAction(okAction);
@@ -158,20 +151,19 @@ class ViewController: UIViewController
        // Do any additional setup after loading the view, typically from a nib.
     
         
-        ref.queryOrderedByChild("price").observeEventType(.ChildAdded, withBlock: { snapshot in
-            if let price = snapshot.value["price"] as? Int {
+        
+        ref.queryOrderedByChild("Payment info").observeEventType(.ChildAdded, withBlock: { snapshot in
+            if let price = snapshot.value["make payment for user"] as? Int {
                 print("\(snapshot.key) price at \(price) Dollars ")
                 print(snapshot.key)
             }
         })
 
-        
-        var userRef = ref.childByAppendingPath("Payment info")
-    var user = ["item1": item1, "time2": item2 , "time3": item3 , "time4": item4 , "time5": item5 , "time6": item6 , "time7": item7 , "time8": item8 , "time9": item9]
+        _ = ref.childByAppendingPath("Payment info")
+    let user = ["item1": item1, "time2": item2 , "time3": item3 , "time4": item4 , "time5": item5 , "time6": item6 , "time7": item7 , "time8": item8 , "time9": item9]
         reef.setValue(user)
         
 
-        
     }
 
     override func didReceiveMemoryWarning()
@@ -187,6 +179,20 @@ class ViewController: UIViewController
 
 
 
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
 
 
 
