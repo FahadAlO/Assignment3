@@ -85,6 +85,15 @@ let user = "non user "
     }
 
 
+  let message = snapshot.value as! String
+            self.Full_name.text = message
+            self.Addrees.text = message
+            self.Phone.text = message
+            self.Data_of_birth.text = message
+            self.BanckAcoount.text = message
+            self.Expires_data.text = message
+
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -102,3 +111,10 @@ let user = "non user "
     */
 
 }
+
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
