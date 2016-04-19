@@ -55,18 +55,6 @@
                                     <segue destination="rTQ-89-3um" kind="presentation" identifier="Reigster" id="Em5-CA-vFq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATL-r9-U0D">
-                                <rect key="frame" x="112" y="467" width="42" height="34"/>
-                                <state key="normal" image="twitter.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldY-2Z-Dne">
-                                <rect key="frame" x="184" y="467" width="32" height="34"/>
-                                <state key="normal" image="tumblr.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZP-Fb-evj">
-                                <rect key="frame" x="253" y="467" width="36" height="36"/>
-                                <state key="normal" image="facebook.png"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Copyright (c) 2016 Fahid Alothman. All rights reserved." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxW-nd-L4X">
                                 <rect key="frame" x="20" y="707" width="418" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1005,7 +993,7 @@ The return of 2-, 3- and 4-player split-screen.</string>
         <!--View Controller-->
         <scene sceneID="XIt-E8-WVK">
             <objects>
-                <viewController id="GlL-4B-CBs" customClass="ViewController" customModule="ShopGames" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="random" id="GlL-4B-CBs" customClass="ViewController" customModule="ShopGames" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tgf-yp-io4"/>
                         <viewControllerLayoutGuide type="bottom" id="nfM-X9-EDI"/>
@@ -1040,8 +1028,8 @@ The return of 2-, 3- and 4-player split-screen.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuu-Rk-hc5">
-                                <rect key="frame" x="28" y="144" width="68" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Addrees:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuu-Rk-hc5">
+                                <rect key="frame" x="27" y="144" width="69" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1063,19 +1051,13 @@ The return of 2-, 3- and 4-player split-screen.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date of birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKR-Qi-UEJ">
-                                <rect key="frame" x="27" y="264" width="97" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dd/mm/yy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BCq-CD-6v2">
                                 <rect key="frame" x="20" y="401" width="374" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Expires data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69h-Mi-Psl">
-                                <rect key="frame" x="28" y="380" width="94" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Expires_data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69h-Mi-Psl">
+                                <rect key="frame" x="25" y="380" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1091,8 +1073,8 @@ The return of 2-, 3- and 4-player split-screen.</string>
                                     <segue destination="Wv8-qE-KbE" kind="presentation" identifier="paymentpages" id="Mjn-x8-Cg8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Full name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuR-Vq-m1H">
-                                <rect key="frame" x="28" y="83" width="78" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Full_name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuR-Vq-m1H">
+                                <rect key="frame" x="20" y="83" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1105,6 +1087,12 @@ The return of 2-, 3- and 4-player split-screen.</string>
                                     <segue destination="YVg-Dc-VTF" kind="presentation" identifier="corees8" id="AvT-fQ-0HP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date_of_birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKR-Qi-UEJ">
+                                <rect key="frame" x="28" y="264" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -1338,16 +1326,16 @@ The return of 2-, 3- and 4-player split-screen.</string>
         <image name="twitter.png" width="42" height="34"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4LG-fs-Rpo"/>
-        <segue reference="eDY-OT-pVd"/>
-        <segue reference="GB9-D0-yh8"/>
-        <segue reference="Em5-CA-vFq"/>
         <segue reference="RBC-vG-zIo"/>
-        <segue reference="V0A-NI-Xtk"/>
-        <segue reference="Fwy-Hf-59s"/>
-        <segue reference="BBu-8N-9Gh"/>
-        <segue reference="zN3-4o-wje"/>
+        <segue reference="Em5-CA-vFq"/>
+        <segue reference="62c-ZP-HWd"/>
+        <segue reference="has-8p-wsO"/>
+        <segue reference="eDY-OT-pVd"/>
         <segue reference="AvT-fQ-0HP"/>
-        <segue reference="bu7-5V-RX9"/>
+        <segue reference="V0A-NI-Xtk"/>
+        <segue reference="Hed-6z-Baw"/>
+        <segue reference="8m4-6Z-33y"/>
+        <segue reference="DYo-au-QXY"/>
+        <segue reference="gxT-H3-j6Y"/>
     </inferredMetricsTieBreakers>
 </document>

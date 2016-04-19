@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270523B01CC2F9B300E3FDA4 /* JokeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270523AF1CC2F9B300E3FDA4 /* JokeCellTableViewCell.swift */; };
+		270523B21CC2FA3600E3FDA4 /* JokeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270523B11CC2FA3600E3FDA4 /* JokeTableViewController.swift */; };
+		270523B61CC2FA9100E3FDA4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270523B51CC2FA9100E3FDA4 /* DataService.swift */; };
+		270523B81CC2FB0D00E3FDA4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270523B71CC2FB0D00E3FDA4 /* Constants.swift */; };
 		2781FB061CB444B8009240BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781FB051CB444B8009240BE /* AppDelegate.swift */; };
 		2781FB081CB444B8009240BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781FB071CB444B8009240BE /* ViewController.swift */; };
 		2781FB0B1CB444B8009240BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2781FB091CB444B8009240BE /* Main.storyboard */; };
@@ -56,12 +60,16 @@
 		2781FB7A1CB5DA7F009240BE /* Xcode13.png in Resources */ = {isa = PBXBuildFile; fileRef = 2781FB791CB5DA7F009240BE /* Xcode13.png */; };
 		2781FB7C1CB5DAD7009240BE /* Xcode14.png in Resources */ = {isa = PBXBuildFile; fileRef = 2781FB7B1CB5DAD7009240BE /* Xcode14.png */; };
 		2781FB7E1CB5DB29009240BE /* Xcode15.png in Resources */ = {isa = PBXBuildFile; fileRef = 2781FB7D1CB5DB29009240BE /* Xcode15.png */; };
-		2781FB801CB6948C009240BE /* ViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781FB7F1CB6948C009240BE /* ViewTableViewController.swift */; };
-		2781FB821CB69512009240BE /* ShareTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781FB811CB69512009240BE /* ShareTableViewController.swift */; };
 		27F8A7BB1CBA7D63002287C0 /* password2.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F8A7BA1CBA7D63002287C0 /* password2.png */; };
+		80DF24A133B6B3CC5D277543 /* Pods_ShopGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1074EAEED9331DB26360ECFC /* Pods_ShopGames.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1074EAEED9331DB26360ECFC /* Pods_ShopGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopGames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		270523AF1CC2F9B300E3FDA4 /* JokeCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeCellTableViewCell.swift; sourceTree = "<group>"; };
+		270523B11CC2FA3600E3FDA4 /* JokeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeTableViewController.swift; sourceTree = "<group>"; };
+		270523B51CC2FA9100E3FDA4 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = ../DataService.swift; sourceTree = "<group>"; };
+		270523B71CC2FB0D00E3FDA4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2781FB021CB444B8009240BE /* ShopGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2781FB051CB444B8009240BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2781FB071CB444B8009240BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,9 +121,9 @@
 		2781FB791CB5DA7F009240BE /* Xcode13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xcode13.png; sourceTree = "<group>"; };
 		2781FB7B1CB5DAD7009240BE /* Xcode14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xcode14.png; sourceTree = "<group>"; };
 		2781FB7D1CB5DB29009240BE /* Xcode15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xcode15.png; sourceTree = "<group>"; };
-		2781FB7F1CB6948C009240BE /* ViewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTableViewController.swift; sourceTree = "<group>"; };
-		2781FB811CB69512009240BE /* ShareTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareTableViewController.swift; sourceTree = "<group>"; };
 		27F8A7BA1CBA7D63002287C0 /* password2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password2.png; sourceTree = "<group>"; };
+		95CDCAD36D6D19287B9525EC /* Pods-ShopGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopGames.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopGames/Pods-ShopGames.release.xcconfig"; sourceTree = "<group>"; };
+		F6F3BF77F55DC2E38D64AF61 /* Pods-ShopGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopGames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopGames/Pods-ShopGames.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,12 +137,21 @@
 				2781FB1D1CB4466A009240BE /* SystemConfiguration.framework in Frameworks */,
 				2781FB1B1CB4465F009240BE /* Security.framework in Frameworks */,
 				2781FB191CB44626009240BE /* Firebase.framework in Frameworks */,
+				80DF24A133B6B3CC5D277543 /* Pods_ShopGames.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09DE83498AE5335149336E01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1074EAEED9331DB26360ECFC /* Pods_ShopGames.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2781FAF91CB444B8009240BE = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +159,8 @@
 				2781FB031CB444B8009240BE /* Products */,
 				2781FB241CB5C815009240BE /* Photos */,
 				2781FB171CB4460A009240BE /* Framework */,
+				877646507A95976B3AEADFE3 /* Pods */,
+				09DE83498AE5335149336E01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,12 +178,14 @@
 				2781FB051CB444B8009240BE /* AppDelegate.swift */,
 				2781FB071CB444B8009240BE /* ViewController.swift */,
 				2781FB5D1CB5CF87009240BE /* PaymentTableViewController.swift */,
-				2781FB7F1CB6948C009240BE /* ViewTableViewController.swift */,
-				2781FB811CB69512009240BE /* ShareTableViewController.swift */,
+				270523B51CC2FA9100E3FDA4 /* DataService.swift */,
 				2781FB091CB444B8009240BE /* Main.storyboard */,
 				2781FB0C1CB444B8009240BE /* Assets.xcassets */,
 				2781FB0E1CB444B8009240BE /* LaunchScreen.storyboard */,
 				2781FB841CB69612009240BE /* Supporting Files */,
+				270523AF1CC2F9B300E3FDA4 /* JokeCellTableViewCell.swift */,
+				270523B11CC2FA3600E3FDA4 /* JokeTableViewController.swift */,
+				270523B71CC2FB0D00E3FDA4 /* Constants.swift */,
 			);
 			path = ShopGames;
 			sourceTree = "<group>";
@@ -237,6 +258,15 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		877646507A95976B3AEADFE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6F3BF77F55DC2E38D64AF61 /* Pods-ShopGames.debug.xcconfig */,
+				95CDCAD36D6D19287B9525EC /* Pods-ShopGames.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,9 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2781FB141CB444B8009240BE /* Build configuration list for PBXNativeTarget "ShopGames" */;
 			buildPhases = (
+				F446D282052013A733E5B360 /* Check Pods Manifest.lock */,
 				2781FAFE1CB444B8009240BE /* Sources */,
 				2781FAFF1CB444B8009240BE /* Frameworks */,
 				2781FB001CB444B8009240BE /* Resources */,
+				F5BED3EF21A80598311AA1A0 /* Embed Pods Frameworks */,
+				EEB2849AEAD77EE625C5A659 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,16 +375,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EEB2849AEAD77EE625C5A659 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShopGames/Pods-ShopGames-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F446D282052013A733E5B360 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5BED3EF21A80598311AA1A0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShopGames/Pods-ShopGames-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2781FAFE1CB444B8009240BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270523B21CC2FA3600E3FDA4 /* JokeTableViewController.swift in Sources */,
 				2781FB5E1CB5CF87009240BE /* PaymentTableViewController.swift in Sources */,
 				2781FB081CB444B8009240BE /* ViewController.swift in Sources */,
-				2781FB821CB69512009240BE /* ShareTableViewController.swift in Sources */,
-				2781FB801CB6948C009240BE /* ViewTableViewController.swift in Sources */,
+				270523B01CC2F9B300E3FDA4 /* JokeCellTableViewCell.swift in Sources */,
 				2781FB061CB444B8009240BE /* AppDelegate.swift in Sources */,
+				270523B61CC2FA9100E3FDA4 /* DataService.swift in Sources */,
+				270523B81CC2FB0D00E3FDA4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +545,7 @@
 		};
 		2781FB151CB444B8009240BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F3BF77F55DC2E38D64AF61 /* Pods-ShopGames.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -477,6 +561,7 @@
 		};
 		2781FB161CB444B8009240BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95CDCAD36D6D19287B9525EC /* Pods-ShopGames.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
