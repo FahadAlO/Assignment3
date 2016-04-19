@@ -15,7 +15,7 @@ import Firebase
 class BuyViewController: UIViewController {
 
 let user = "non user "
-
+let customer 
     
     let  ref = Firebase(url:"https://shopgames.firebaseio.com/Bank")
     
