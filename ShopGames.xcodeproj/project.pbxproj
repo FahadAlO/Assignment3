@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		270523B01CC2F9B300E3FDA4 /* JokeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270523AF1CC2F9B300E3FDA4 /* JokeCellTableViewCell.swift */; };
-		270523B21CC2FA3600E3FDA4 /* JokeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270523B11CC2FA3600E3FDA4 /* JokeTableViewController.swift */; };
 		270523B61CC2FA9100E3FDA4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270523B51CC2FA9100E3FDA4 /* DataService.swift */; };
 		270523B81CC2FB0D00E3FDA4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270523B71CC2FB0D00E3FDA4 /* Constants.swift */; };
 		2781FB061CB444B8009240BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781FB051CB444B8009240BE /* AppDelegate.swift */; };
@@ -66,8 +64,6 @@
 
 /* Begin PBXFileReference section */
 		1074EAEED9331DB26360ECFC /* Pods_ShopGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopGames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		270523AF1CC2F9B300E3FDA4 /* JokeCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeCellTableViewCell.swift; sourceTree = "<group>"; };
-		270523B11CC2FA3600E3FDA4 /* JokeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeTableViewController.swift; sourceTree = "<group>"; };
 		270523B51CC2FA9100E3FDA4 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = ../DataService.swift; sourceTree = "<group>"; };
 		270523B71CC2FB0D00E3FDA4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2781FB021CB444B8009240BE /* ShopGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,8 +179,6 @@
 				2781FB0C1CB444B8009240BE /* Assets.xcassets */,
 				2781FB0E1CB444B8009240BE /* LaunchScreen.storyboard */,
 				2781FB841CB69612009240BE /* Supporting Files */,
-				270523AF1CC2F9B300E3FDA4 /* JokeCellTableViewCell.swift */,
-				270523B11CC2FA3600E3FDA4 /* JokeTableViewController.swift */,
 				270523B71CC2FB0D00E3FDA4 /* Constants.swift */,
 			);
 			path = ShopGames;
@@ -428,10 +422,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				270523B21CC2FA3600E3FDA4 /* JokeTableViewController.swift in Sources */,
 				2781FB5E1CB5CF87009240BE /* PaymentTableViewController.swift in Sources */,
 				2781FB081CB444B8009240BE /* ViewController.swift in Sources */,
-				270523B01CC2F9B300E3FDA4 /* JokeCellTableViewCell.swift in Sources */,
 				2781FB061CB444B8009240BE /* AppDelegate.swift in Sources */,
 				270523B61CC2FA9100E3FDA4 /* DataService.swift in Sources */,
 				270523B81CC2FB0D00E3FDA4 /* Constants.swift in Sources */,

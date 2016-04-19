@@ -15,7 +15,6 @@ class PaymentTableViewController: UITableViewController
 {
     let  ref = Firebase(url:"https://shopgames.firebaseio.com/Bank")
 
-<<<<<<< HEAD
     
     var item1 = ["full_name": "Carol Louie", "date_of_birth": "May 20, 1987"]
     var item2 = ["full_name": "Brian Best", "date_of_birth": "May 17, 1989"]
@@ -102,12 +101,7 @@ class PaymentTableViewController: UITableViewController
     }
     
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        return tableView.dequeueReusableCellWithIdentifier("JokeCellTableViewCell") as! JokeCellTableViewCell
-        
-    }
-    
+       
 }
 
 
