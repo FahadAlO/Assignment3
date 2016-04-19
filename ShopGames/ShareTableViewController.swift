@@ -10,7 +10,8 @@ import UIKit
 import Firebase
 
 
-class ShareTableViewController: UITableViewController {
+class ShareTableViewController: UITableViewController 
+{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,3 +96,4 @@ class ShareTableViewController: UITableViewController {
     */
 
 }
+

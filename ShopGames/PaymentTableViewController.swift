@@ -10,10 +10,12 @@ import UIKit
 import Foundation
 import Firebase
 
+
 class PaymentTableViewController: UITableViewController
 {
     let  ref = Firebase(url:"https://shopgames.firebaseio.com/Bank")
 
+<<<<<<< HEAD
     
     var item1 = ["full_name": "Carol Louie", "date_of_birth": "May 20, 1987"]
     var item2 = ["full_name": "Brian Best", "date_of_birth": "May 17, 1989"]
@@ -427,6 +429,88 @@ class PaymentTableViewController: UITableViewController
     }
     
     override func viewDidLoad()
+=======
+     let  ref = Firebase(url:"https://shopgames.firebaseio.com")
+    
+    
+    @IBOutlet weak var userNameField: UITextField!
+    @IBOutlet weak var addreesField: UITextField!
+    @IBOutlet weak var phoneField: UITextField!
+    @IBOutlet weak var brithdayField: UITextField!
+    @IBOutlet weak var BanckAccField: UITextField!
+    @IBOutlet weak var dataField: UITextField!
+    
+
+  
+    var item1     =    ["name": "CD name", "item" : "", "price": "$"]
+    var item2     =    ["name": "CD name", "item": ""  , "price": "$"]
+    var item3     =    ["name": "CD name"  , "item": "", "price": "$"]
+    var item4     =    ["name": "CD name"  , "item": "", "price": "$"]
+    
+    var item5     =    ["name": "CD name", "item" : "", "price": "$"]
+    var item6     =    ["name": "CD name", "item": ""  , "price": "$"]
+    var item7     =    ["name": "CD name"  , "item": "", "price": "$"]
+    var item8     =    ["name": "CD name"  , "item": "", "price": "$"]
+    
+    var item9     =    ["name": "CD name", "item" : "", "price": "$"]
+    var item10    =    ["name": "CD name", "item": ""  , "price": "$"]
+    var item11    =    ["name": "CD name"  , "item": "", "price": "$"]
+    var item12    =    ["name": "CD name"  , "item": "", "price": "$"]
+    
+    var item13    =    ["name": "CD name", "item" : "", "price": "$"]
+    var item14    =    ["name": "CD name", "item": ""  , "price": "$"]
+    var item15    =    ["name": "CD name"  , "item": "", "price": "$"]
+    var item16    =    ["name": "CD name"  , "item": "", "price": "$"]
+    
+ 
+    @IBAction func buttonpayment(sender: AnyObject)
+    {
+        
+            let usersRef = ref.childByAppendingPath("users")
+            
+            let users = ["item1": item1, "item2": item2, "item3" : item3 , "item4" : item4 item1, "item2": item2, "item3" : item3 , "item4" : item4 item1, "item2": item2, "item3" : item3 , "item4" : item4]
+            
+            usersRef.setValue(users)
+        
+        
+        ref.queryOrderedByChild("price").observeEventType(.ChildAdded, withBlock: { snapshot in
+            if let price = snapshot.value["price"] as? Int {
+                print("\(snapshot.key) price at \(price) Dollars ")
+                print(snapshot.key)
+            }
+        })
+        
+    }
+    
+    
+      ref.authWithCustomToken(userNameField.text, withCompletionBlock: { error, result in
+        
+        
+            self.ref.authWithCustomToken(self.addreesField.text, withCompletionBlock: { error, result in
+            
+                
+                self.ref.authWithCustomToken(self.phoneField.text, withCompletionBlock: { error, result in
+                
+                    
+                    self.ref.authWithCustomToken(self.brithdayField.text, withCompletionBlock: { error, result in
+                        
+                        
+                         self.ref.authWithCustomToken(self.brithdayField.text, withCompletionBlock: { error, result in
+                            
+                        })
+                    })
+                    
+                })
+            
+            })
+        
+        })
+     }
+       
+     
+  
+      override func viewDidLoad()
+>>>>>>> 896abef8f722c7303ad09860bddca483b2d4cca8
     {
         super.viewDidLoad()
         
