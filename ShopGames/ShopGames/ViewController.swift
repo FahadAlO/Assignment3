@@ -20,23 +20,25 @@ class ViewController: UIViewController
    let  reef = Firebase(url:"https://shopgames.firebaseio.com/Bank_info")
 
     
-    var item1 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
+    
+    var item1 = ["Full_name": "Fahid", "Address" : "Red st", "Phone": "123456789","Data_of_birth" : "01/08/1991", "BankAccount" :"111111111111", "Expires_data" :"01/01/2016" ]
  
-    var item2 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
+    var item2 = ["Full_name": "Alan", "Address" : "green st", "Phone": "0475838343","Data_of_birth" : "01/08/1976", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
     
-    var item3 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
+    var item3 = ["Full_name": "Joy", "Address" : "xiver st", "Phone": "04333","Data_of_birth" : "01/08/194", "BankAccount" :"358347272", "Expires_data" :"01/04/2016" ]
 
-    var item4 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
+    var item4 = ["Full_name": "Turning", "Address" : " st", "Phone": "0475838343","Data_of_birth" : "01/08/1990", "BankAccount" :"3582432", "Expires_data" :"01/04/2018" ]
     
-    var item5 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
+    var item5 = ["Full_name": "Ali", "Address" : "Red st", "Phone": "04731253343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2019" ]
     
-    var item6 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
+    var item6 = ["Full_name": "aziz", "Address" : "random st", "Phone": "047087643","Data_of_birth" : "01/08/1988", "BankAccount" :"358347112", "Expires_data" :"01/04/2012" ]
     
-    var item7 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
+    var item7 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475122343","Data_of_birth" : "01/08/1977", "BankAccount" :"35834765", "Expires_data" :"01/04/2017" ]
     
-    var item8 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
+    var item8 = ["Full_name": "Alan", "Address" : "rdew st", "Phone": "04758212343","Data_of_birth" : "01/08/1995", "BankAccount" :"358343332", "Expires_data" :"01/04/2019" ]
     
-    var item9 = ["Full_name": "Alan Turning", "Address" : "Red st", "Phone": "0475838343","Data_of_birth" : "01/08/1991", "BankAccount" :"358347272", "Expires_data" :"01/04/2017" ]
+    var item9 = ["Full_name": "hekko", "Address" : "sdew st", "Phone": "0475438343","Data_of_birth" : "01/08/1992", "BankAccount" :"358347111", "Expires_data" :"01/04/2017" ]
+    
     
     
   var screen: [String] = ["Xcode.png","Xcode1.png","Xcode2.png","Xcode3.png","Xcode4.png","Xcode5.png","Xcode6.png","Xcode7.png","Xcode8.png","Xcode9.png","Xcode10.png","Xcode11.png","Xcode12.png","Xcode13.png","Xcode14.png","Xcode15.png","email.png","facebook.png","password2.png","Screen.png","Screen10.png","Screen11.png","Screen12.png","Screen13.png","Screen14.png","Screen15.png","Screen2.png"
